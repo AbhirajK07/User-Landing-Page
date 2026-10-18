@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <title>Log In | Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="../Main/index.html" aria-label="Name home">
+            <span class="brand-mark" aria-hidden="true">N</span>
+            <span class="brand-name">Name</span>
+        </a>
+    </header>
+
+    <main class="page-shell">
+        <form onsubmit="return validateLogin()" novalidate>
+            <h1>Welcome back</h1>
+            <p class="form-intro">Log in to continue to your account.</p>
+
+            <label for="identifier">Username or Email</label>
+            <input id="identifier" type="text" name="identifier" placeholder="Enter your username or email" autocomplete="username">
+
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" placeholder="Enter your password" autocomplete="current-password">
+
+            <button type="submit">Log In</button>
+
+            <p class="form-footer">New here? <a href="../Signup/index.html">Create an account</a></p>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

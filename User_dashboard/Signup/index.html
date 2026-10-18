@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Name</title>
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="../Main/index.html" aria-label="Name home">
+            <span class="brand-mark" aria-hidden="true">N</span>
+            <span class="brand-name">Name</span>
+        </a>
+    </header>
+
+    <main class="page-shell">
+        <form onsubmit="return validateform()" novalidate>
+            <h1>Create Account</h1>
+            <p class="form-intro">Get started by creating your account.</p>
+
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" autocomplete="name">
+
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" placeholder="Choose a username" autocomplete="username">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" autocomplete="email">
+
+            <label for="contact">Contact Number</label>
+            <input id="contact" type="tel" name="contact" placeholder="Enter your phone number" autocomplete="tel">
+
+            <label for="password">Password</label>
+            <input id="password" type="password" name="pass" placeholder="Enter your password" autocomplete="new-password">
+
+            <button type="submit">Register Now</button>
+
+            <p class="form-footer">Already have an account? <a href="../Login/index.html">Log in</a></p>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
